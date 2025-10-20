@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita SMAN 3 Bandung</title>
+  <link rel="stylesheet" href="stylecsstiga.css">
+  <style>
+   
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    .modal-content {
+      background: #ffffff;
+      border-radius: 18px;
+      width: 90%;
+      max-width: 600px;
+      padding: 25px 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      animation: fadeUp 0.3s ease;
+      position: relative;
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(25px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 22px;
+      color: #555;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .close:hover { color: #0cbde9; }
+    .modal-content h3 {
+      color: #0cbde9;
+      text-align: center;
+      margin-bottom: 6px;
+      font-size: 22px;
+    }
+    .modal-content small {
+      display: block;
+      text-align: center;
+      color: #666;
+      margin-bottom: 14px;
+    }
+    .modal-content p {
+      color: #333;
+      text-align: justify;
+      line-height: 1.7;
+      font-size: 15px;
+      white-space: pre-line;
+    }
+   
+    .box-berita {
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .box-berita:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#"><img src="gambar/logo sman3.png" alt="Logo SMAN 3 Bandung"></a>
+    <div class="identitas"><h1>Portal Siswa SMAN 3 Bandung</h1></div>
+    <nav>
+      <ul>
+        <li><a href="indexxx.html">Beranda</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li>
+          <a href="#">Profil</a>
+          <ul>
+            <li><a href="sejarah.html">Sejarah Sekolah</a></li>
+            <li><a href="visi-misi.html">Visi dan Misi</a></li>
+            <li><a href="namaguru.html">Guru dan Staff</a></li>
+          </ul>
+        </li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bagian Berita -->
+  <section>
+    <h2>Kegiatan Yang Akan Berlangsung</h2>
+    <div class="berita-container">
+
+      <div class="box-berita" 
+        data-judul="Edupassion 2025" 
+        data-tanggal="18 Februari 2025" 
+        data-isi="Edupassion adalah kegiatan tahunan yang diselenggarakan SMAN 3 Bandung untuk memberikan wawasan kepada siswa, khususnya kelas XII, mengenai dunia perkuliahan dan karier. 
+Tahun 2025 ini, Edupassion menghadirkan lebih dari 40 universitas ternama dari negeri waupun swasta, termasuk ITB, UI dan UGM. 
+
+Melalui sesi pameran kampus, seminar karier, dan konsultasi langsung dengan alumni, siswa diajak memahami perbedaan jurusan, peluang beasiswa, hingga strategi memilih kampus yang sesuai dengan potensi diri. 
+Selain itu, kegiatan ini juga dimeriahkan oleh talkshow inspiratif bertema 'Finding Your Future Path', menghadirkan pembicara dari kalangan profesional muda yang sukses di bidangnya. 
+
+Edupassion bukan hanya tentang memilih universitas, tetapi juga tentang menemukan arah masa depan. 
+Dengan semangat eksplorasi dan bimbingan dari guru BK, siswa SMAN 3 Bandung diharapkan dapat menentukan langkah dengan percaya diri dan penuh motivasi.">
+        <img src="gambar/edupas.png" alt="Edupassion" style="width:100%; border-radius:10px;">
+        <h3>Edupassion 2025</h3>
+      </div>
+
+      <div class="box-berita" 
+        data-judul="TKA kelas XII" 
+        data-tanggal="1 Oktober 2025" 
+        data-isi="Tes Kemampuan Akademik (TKA) kelas XII merupakan kegiatan rutin yang diadakan untuk melatih kesiapan akademik siswa menjelang ujian akhir dan seleksi masuk perguruan tinggi. 
+
+Tahun ini, TKA dilaksanakan pada 3-6 Noevember 2025 dengan melibatkan seluruh siswa kelas XII dari berbagai jurusan. 
+Soal-soal TKA mencakup bidang Matematika, Bahasa Indonesia, Bahasa Inggris, dan kemampuan penalaran umum. 
+
+Selain menjadi ajang latihan, TKA juga berfungsi untuk mengukur kompetensi berpikir kritis, logis, dan analitis siswa. 
+Setelah ujian, guru memberikan hasil analisis individu agar setiap siswa dapat mengetahui keunggulan dan aspek yang perlu diperbaiki. 
+
+Kepala sekolah, Dr. Ida Rohayani, menyampaikan bahwa kegiatan ini adalah bentuk dukungan sekolah terhadap siswa dalam menghadapi seleksi perguruan tinggi negeri dan swasta. 
+“Melalui TKA, kami berharap siswa lebih siap dan percaya diri menghadapi masa depan akademiknya,” ujarnya.">
+        <img src="gambar/TKA.png" alt="TKA" style="width:100%; border-radius:10px;">
+        <h3>TKA kelas XII</h3>
+      </div>
+
+      <div class="box-berita" 
+        data-judul="Fesbud 2025" 
+        data-tanggal="8 Oktober 2025" 
+        data-isi="Festival Budaya SMAN 3 Bandung atau FESBUD adalah acara tahunan yang menggabungkan kreativitas, seni, dan kearifan lokal dalam satu perayaan besar. 
+Tahun 2025 ini, FESBUD mengusung tema 'Ragam Warna Nusantara', menampilkan keberagaman budaya Indonesia melalui pertunjukan tari tradisional, musik, dan pameran karya seni siswa PKWU. 
+
+Selain hiburan, FESBUD juga memiliki tujuan edukatif: menumbuhkan rasa cinta terhadap kebudayaan bangsa dan mengembangkan kreativitas siswa di bidang seni. 
+Dengan dukungan penuh dari para guru dan alumni, kegiatan ini menjadi simbol semangat kolaborasi dan kebanggaan sebagai pelajar Indonesia.">
+        <img src="gambar/fesbud25.png" alt="Fesbud" style="width:100%; border-radius:10px;">
+        <h3>Fesbud 2025</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <h2>Kegiatan Yang Telah Berlangsung</h2>
+    <div class="berita-container">
+
+      <div class="box-berita" 
+        data-judul="Festival Budaya Madjavantri" 
+        data-tanggal="2 Juni 2024" 
+        data-isi="Festival Madjavantri merupakan perayaan budaya internal OSIS SMAN 3 Bandung yang menonjolkan seni, kreativitas, dan kerja sama antar siswa. 
+Nama 'Madjavantri' berasal dari bahasa Sanskerta yang berarti 'semangat para pejuang', mencerminkan tekad siswa dalam melestarikan budaya Indonesia melalui karya. 
+
+Acara ini berlangsung meriah di Lapangan Bali dengan berbagai acara seperti tari modern, teater, dan paduan suara. 
+Selain itu, ada juga bazar makanan tradisional dan penampilan tari janger dan kecak yang dilakukan oleh anak kelas X 3'27.
+ 
+Festival Madjavantri menjadi wadah bagi siswa untuk mengekspresikan diri sekaligus mempererat hubungan antarwarga sekolah dalam suasana penuh semangat.">
+        <img src="gambar/fesbud.jpg" alt="Madjavantri" style="width:100%; border-radius:10px;">
+        <h3>Festival Budaya Madjavantri</h3>
+      </div>
+
+      <div class="box-berita" 
+        data-judul="Hari Batik Nasional" 
+        data-tanggal="3 Oktober 2025" 
+        data-isi="Dalam rangka memperingati Hari Batik Nasional yang jatuh pada tanggal 2 Oktober, seluruh warga SMAN 3 Bandung mengenakan pakaian batik selama kegiatan belajar mengajar. 
+Pemandangan penuh warna dan motif menghiasi setiap kelas, menciptakan suasana yang hangat dan membanggakan. 
+
+Melalui kegiatan ini, SMAN 3 Bandung ingin menanamkan nilai-nilai cinta budaya dan kebanggaan terhadap warisan bangsa. 
+“Batik bukan sekadar kain, tapi identitas yang harus kita jaga dan wariskan,” ujar guru seni budaya, Bapak Rizal.">
+        <img src="gambar/hari batik.png" alt="Hari Batik" style="width:100%; border-radius:10px;">
+        <h3>Hari Batik Nasional</h3>
+      </div>
+
+      <div class="box-berita" 
+        data-judul="LDKS" 
+        data-tanggal="8 Juni 2024" 
+        data-isi="Latihan Dasar Kepemimpinan Siswa (LDKS) adalah kegiatan pembinaan karakter dan kepemimpinan bagi kelas X SMAN 3 Bandung. 
+Kegiatan ini dilaksanakan di lingkungan Tentara dan berlangsung selama tiga hari penuh dengan berbagai materi dan praktik lapangan. 
+
+Siswa mendapatkan pelatihan tentang kerja sama tim, komunikasi efektif, disiplin, dan pengambilan keputusan. 
+Selain itu, mereka juga mengikuti simulasi kepemimpinan dan outbond yang dipandu oleh pembina OSIS dan guru-guru senior. 
+
+Melalui kegiatan ini, diharapkan para peserta tidak hanya memahami konsep kepemimpinan, tetapi juga menerapkannya dalam keseharian. 
+LDKS menjadi langkah awal untuk mencetak generasi pemimpin muda yang berkarakter, bertanggung jawab, dan berjiwa sosial tinggi.">
+        <img src="gambar/ldks.png" alt="LDKS" style="width:100%; border-radius:10px;">
+        <h3>LDKS</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Artikel -->
+  <div class="modal" id="modalBerita">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="judulModal"></h3>
+      <small id="tanggalModal"></small>
+      <p id="isiModal"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Portal Siswa SMAN 3 Bandung</p>
+  </footer>
+
+  <script>
+    const boxes = document.querySelectorAll('.box-berita');
+    const modal = document.getElementById('modalBerita');
+    const close = document.querySelector('.close');
+    const judulModal = document.getElementById('judulModal');
+    const tanggalModal = document.getElementById('tanggalModal');
+    const isiModal = document.getElementById('isiModal');
+
+    boxes.forEach(box => {
+      box.addEventListener('click', () => {
+        judulModal.textContent = box.dataset.judul;
+        tanggalModal.textContent = "Upload: " + box.dataset.tanggal;
+        isiModal.textContent = box.dataset.isi;
+        modal.style.display = 'flex';
+      });
+    });
+
+    close.onclick = () => modal.style.display = 'none';
+    window.onclick = (e) => { if (e.target == modal) modal.style.display = 'none'; };
+  </script>
+</body>
+</html>
